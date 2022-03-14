@@ -1,0 +1,110 @@
+
+footer ul li{
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 15px;
+    background-color: brown;}
+
+a{  color: aliceblue;
+    text-decoration: none;}
+
+p { color: aliceblue;
+    text-decoration: none;}
+
+h1{ color: yellow;}
+
+
+.color-violeta{
+    background-color: blueviolet;}
+
+.color-negro-fondo{
+    background-color: black;}
+ 
+.tipografia-Permanentmarker{
+    font-family: 'Permanent Marker', cursive;}
+
+.tipografia-openSans{
+    font-family: 'Open Sans', sans-serif;}
+
+a { font-family:'Open Sans', sans-serif;}
+
+p { font-family:'Open Sans', sans-serif;}
+
+body header div nav ul li {
+    display: inline-block;
+    padding: 1rem;
+    }
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    grid-area: header;
+}
+
+.gradiente_titulo {
+    background-image: linear-gradient(red, yellow);
+}
+ 
+/* ¿Cómo puedo editar este "main"? ¿Puedo aplicarle un grid dentro del grid general? ¿Debería ponerle grid-area a los div y al h1? */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: main;}
+
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* grid general "index" */
+.container__grid {
+    display: grid;
+    grid-template-columns: repeat(1fr 1fr 1fr);
+    grid-template-areas:
+    "header header header"
+    "main main aside"                        /* si vemos la página el aside no estaría ocupando 1fr como le indico */
+    "footer footer footer"
+
+}
+
+section {
+    grid-area: section;
+}
+
+/* grid "trabajos" */
+.container__grid-trabajos {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-template-areas:
+    "header"
+    "section"
+    "footer"
+}
+
+@media (max-width: 578px) {
+    .container__grid {
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        grid-template-areas:
+        "header"
+        "main"
+        "aside"
+        "footer"
+    
+    }
+
+    .container__grid-trabajos {
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        grid-template-areas:
+        "header"
+        "section"
+        "footer"
+    }
+}
