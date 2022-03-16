@@ -30,14 +30,10 @@ a { font-family:'Open Sans', sans-serif;}
 
 p { font-family:'Open Sans', sans-serif;}
 
-body header div nav ul li {
-    display: inline-block;
-    padding: 1rem;
-    }
 
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 1rem;
     grid-area: header;
@@ -47,64 +43,13 @@ header {
     background-image: linear-gradient(red, yellow);
 }
  
-/* ¿Cómo puedo editar este "main"? ¿Puedo aplicarle un grid dentro del grid general? ¿Debería ponerle grid-area a los div y al h1? */
-main {
+.container__main {
     display: flex;
-    flex-wrap: wrap;
-    grid-area: main;}
-
-
-aside {
-    grid-area: aside;
-}
-
-footer {
-    grid-area: footer;
-}
-
-/* grid general "index" */
-.container__grid {
-    display: grid;
-    grid-template-columns: repeat(1fr 1fr 1fr);
-    grid-template-areas:
-    "header header header"
-    "main main aside"                        /* si vemos la página el aside no estaría ocupando 1fr como le indico */
-    "footer footer footer"
-
-}
-
-section {
-    grid-area: section;
-}
-
-/* grid "trabajos" */
-.container__grid-trabajos {
-    display: grid;
-    grid-template-columns: repeat(1fr);
-    grid-template-areas:
-    "header"
-    "section"
-    "footer"
-}
-
-@media (max-width: 578px) {
-    .container__grid {
-        display: grid;
-        grid-template-columns: repeat(1fr);
-        grid-template-areas:
-        "header"
-        "main"
-        "aside"
-        "footer"
-    
+    flex-direction: column;
+    justify-content: center;
     }
 
-    .container__grid-trabajos {
-        display: grid;
-        grid-template-columns: repeat(1fr);
-        grid-template-areas:
-        "header"
-        "section"
-        "footer"
-    }
-}
+    .tamaño_carousel {
+        height: 100px;
+        width: 100px;
+      }
