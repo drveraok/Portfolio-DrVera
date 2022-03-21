@@ -10,32 +10,63 @@
     
 </head>
 <body class="color-negro-fondo">
-    <header>
-        <img src="" alt="Logo">
-        <nav>
-            <ul>
-                <li><a href="../index.html" style="text-decoration: none;">Inicio</a></li>
-                <li><a href="../pages/bio.html" style="text-decoration: none;">Bio</a></li>
-                <li><a href="./servicio.html" style="text-decoration: none;">Servicio</a></li>
-                <li><a href="../pages/trabajos.html" style="text-decoration: none;">Trabajos</a></li>
-                <li><a href="../pages/contacto.html" style="text-decoration: none;">Contacto</a></li>
-            </ul>
-        </nav>
+    <header class="container__header">
+        <img src="" alt="Logo" class="color-violeta">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">Dr Vera</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/bio.html">Bio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./servicio.html">Servicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/trabajos.html">Trabajos</a>
+                  </li>
+                  
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
 
     </header>
 
-    <p>Texto.
+    <p class="p_servicio">Texto.
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, deserunt temporibus voluptate debitis exercitationem facilis sed velit officiis assumenda corrupti quia dolore qui facere quos error earum? Reiciendis, pariatur quaerat.
     </p>
     
-    <footer>
-        <ul>
-            <li><a href="https://www.youtube.com/channel/UCdSiBRGt_AU50LvxpD9ZtiQ">YouTube</a></li>
-            <li><a href="https://www.facebook.com/DrVera-104170744318281">Facebook</a></li>
-            <li><a href="https://www.instagram.com/dr.vera__/">Instagram</a></li>
-            <li><a href="https://www.fiverr.com/drveramusic?up_rollout=true">Fiverr</a></li>
-            <li><a href="https://www.behance.net/juanmanuelvera">Behance</a></li>
-        </ul>
+    <footer> 
+        <button a href="https://www.facebook.com/DrVera-104170744318281" type="button" class="btn btn-primary">Facebook</button>
+        <button a href="https://www.behance.net/juanmanuelvera" type="button" class="btn btn-secondary">Behance</button>
+        <button a href="https://www.fiverr.com/drveramusic?up_rollout=true" type="button" class="btn btn-success">Fiverr</button>
+        <button a href="https://www.youtube.com/channel/UCdSiBRGt_AU50LvxpD9ZtiQ" type="button" class="btn btn-danger">Youtube</button>
+        <button a href="https://www.instagram.com/dr.vera__/" type="button" class="btn btn-warning">Instagram</button>
+                
+    
+        <button type="button" class="btn btn-link">Link</button>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
