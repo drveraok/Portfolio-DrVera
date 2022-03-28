@@ -97,3 +97,38 @@ footer {
 .carrousel_indicators {
     margin-top: -6rem;
 }
+
+.mail_box {
+    color: white;
+    size: 3rem;
+}
+
+.div_contacto {
+    color: white;
+}
+
+.boton_contacto_enviar {
+    border: 1px solid #ffffff; /*anchura, estilo y color borde*/
+    padding: 10px; /*espacio alrededor texto*/
+    background-color: #000000; /*color botón*/
+    color: #ffffff; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
+    font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+    border-radius: 50px; /*bordes redondos*/
+
+}
+
+.imagen_servicio {
+    max-width: 100%;
+    max-height: 100%;
+   }
+
+.div_imagen_servicio {
+    height: 650px;
+    width: 650px;
+}
+
+.p_servicio {
+    color: white;
+}
