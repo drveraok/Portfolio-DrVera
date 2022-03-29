@@ -1,9 +1,42 @@
+/* audio::-webkit-media-controls-panel {
+    background-color: rgb(255, 230, 0);
+  } */
 
-footer ul li{
-    display: inline-block;
-    margin-left: 15px;
-    margin-top: 15px;
-    background-color: brown;}
+  audio::-webkit-media-controls-mute-button {
+    background-color: #B1D4E0;
+    border-radius: 50%;
+  }
+
+  audio::-webkit-media-controls-play-button {
+    background-color: #B1D4E0;
+    border-radius: 50%;
+  }
+  
+  audio::-webkit-media-controls-play-button:hover {
+    background-color: rgba(177,212,224, .7);
+  }
+
+ /*  audio::-webkit-media-controls-current-time-display {
+    color: #fff;
+  } */
+
+  /* audio::-webkit-media-controls-time-remaining-display {
+    color: #fff;
+  } */
+
+/*   audio::-webkit-media-controls-timeline {
+    background-color: #B1D4E0;
+    border-radius: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+  } */
+
+  audio::-webkit-media-controls-volume-slider {
+    background-color: #B1D4E0;
+    border-radius: 25px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
 
 a{  color: aliceblue;
     text-decoration: none;}
@@ -88,23 +121,37 @@ aside {
 
 footer {
     padding: 1rem;
-    display: flex;
-    justify-content: start;
+    position:fixed;
+    left:0px;
+    bottom:8px;
+    height:52px;
+    width:100%;
+}
+
+/* ¿Cómo cambio colores de botones bootstrap? */
+.button_footer_instagram {
+    background-color: violet;
 }
 
 
-/* ¿cómo modifico esto? ¿Se modifican así las clases "preseteadas" de bootstrap? */
 .carrousel_indicators {
     margin-top: -6rem;
 }
 
 .mail_box {
     color: white;
-    size: 3rem;
+    width: 25rem;
+    margin-left: 2rem;
+}
+
+.mail_box_2 {
+    height: 10rem;
 }
 
 .div_contacto {
     color: white;
+    margin-top: 2rem;
+    margin-left: 1rem;
 }
 
 .boton_contacto_enviar {
@@ -116,6 +163,9 @@ footer {
     text-transform: uppercase; /*capitalización texto*/
     font-family: 'Helvetica', sans-serif; /*tipografía texto*/
     border-radius: 50px; /*bordes redondos*/
+    width: 5rem;
+    height: 3rem;
+    margin-left: 4rem;
 
 }
 
@@ -131,4 +181,39 @@ footer {
 
 .p_servicio {
     color: white;
+}
+
+.imagen_bio_div {
+    display: flex; 
+    justify-content: center;
+}
+
+
+.imagen_bio {
+    width: 35rem;
+    height: 20rem;
+    border: 2px solid;
+    border-color: white;
+  }
+
+.playlist_imagenes {
+    width: 12rem;
+    height: 8rem;
+    margin: 2rem 0 2rem 0;
+}
+
+.playlist_container {
+    display: flex; flex-direction: row;
+    justify-content: space-between;
+    margin: 0 2rem 0 2rem;
+    }
+
+audio {
+    height: 2rem;
+}
+
+.videogame_music, .orchestral_music, .electronic_music, .rock-funk_music {
+    border: 1px solid;
+    border-color: rgb(255, 187, 0);
+    padding: 5px;
 }
