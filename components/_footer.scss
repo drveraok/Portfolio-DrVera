@@ -1,0 +1,26 @@
+@import "../base/variables";
+@import "../base/listas";
+@import "../base/maps";
+@import "../base/mixin";
+@import "../base/extends";
+
+
+.footer_trabajos {
+    margin-top: 10rem;
+}
+
+footer {
+    padding: 1rem;
+    position:fixed;
+    left:0px;
+    bottom:8px;
+    @include dimensiones (100%, 52px )
+}
+
+// ¿Cómo cambio colores de botones bootstrap?
+.button_footer_instagram {
+    background-color: violet;
+}
+
+/* height:52px;
+width:100%; */

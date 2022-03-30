@@ -1,0 +1,20 @@
+@import "../base/variables";
+@import "../base/listas";
+@import "../base/maps";
+@import "../base/mixin";
+@import "../base/extends";
+
+
+.imagen_logo {
+    @include dimensiones (12rem, 12rem )
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    grid-area: header;
+    margin: 0 2rem 0 2rem;
+}

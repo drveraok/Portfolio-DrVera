@@ -1,0 +1,47 @@
+@import "../base/variables";
+@import "../base/listas";
+@import "../base/maps";
+@import "../base/mixin";
+@import "../base/extends";
+
+
+h1 {
+    color: #ffd900;
+    text-decoration: underline #ffd900;
+}
+
+
+ 
+.container__main {
+    @extend %dflex-clm
+    }
+
+.foto-main {
+    border: 2px solid;
+    border-color: #ffd900;
+}
+
+body
+    main
+        h1{ margin: 3rem;
+            div
+                img { margin: 2rem;
+                
+                }
+
+                
+        
+        }
+
+        
+    body
+        main
+            h1{ margin: 3rem;
+                div
+                    iframe { margin: 2rem;
+                    
+                    }
+    
+                    
+            
+            }        

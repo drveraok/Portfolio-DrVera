@@ -1,0 +1,15 @@
+// @mixin colores ($colors, $ancho, $borde) {
+//     background-color: $colors;
+//     width: $ancho;
+//     padding: $borde;  
+// }
+
+// .header-index {
+//     @include colores(red,20 , )
+// }
+ 
+ @mixin dimensiones ($ancho, $alto) {
+     width: $ancho;
+     height: $alto;
+ }
+ 
