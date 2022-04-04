@@ -5,21 +5,44 @@
 @import "../base/extends";
 
 
-h1 {
-    color: #ffd900;
-    text-decoration: underline #ffd900;
-}
 
 
  
 .container__main {
-    @extend %dflex-clm
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
     }
+
+
+
+h1 {
+    display: flex; 
+    justify-content: center;
+    color: #ffd900;
+    text-decoration: underline #ffd900;
+    }
+    
 
 .foto-main {
     border: 2px solid;
     border-color: #ffd900;
+    width: 28rem;
+    height: 20rem;
+    
 }
+
+.imagen_div {
+    display: flex; 
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.iframe_div {
+    display: flex; 
+    justify-content: center;
+    }
 
 body
     main
